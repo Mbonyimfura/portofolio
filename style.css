@@ -86,7 +86,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: rgb(112, 110, 111);
+    background: rgb(1, 1, 1);
 }
 .navbar .max-width{
     display: flex;
@@ -103,7 +103,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-    color: #fff;
+    color: rgb(56, 70, 9);
 }
 .navbar .menu li{
     list-style: none;
@@ -118,7 +118,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: rgb(111, 13, 13);
+    color: rgb(233, 225, 225);
     border-radius: 30px;
 }
 .navbar.sticky .menu li a:hover{
@@ -217,6 +217,10 @@ section .title::after{
 
 /* about section styling */
 
+.about{
+   background:  #888;
+   
+}
 .about .about-content .left{
     width: 45%;
 }
@@ -224,7 +228,7 @@ section .title::after{
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 500px;
 }
 .about .about-content .right{
     width: 55%;
@@ -257,7 +261,7 @@ section .title::after{
     background: none;
 }
 .img{
-    border: 2px solid #000;
+    border: 5px solid #000;
     border-radius: 20px;
     width: 30%;
     height: 30%px;
@@ -328,9 +332,12 @@ section .title::after{
 
 /* skills section */
 
-
+.skills {
+    background: rgb(238, 231, 231);
+}
 .skills .skills-content .column{
     width: calc(50% - 30px);
+   
 }
 
 
@@ -402,7 +409,9 @@ section .title::after{
 
 
 /* contact section */
-
+.contact{
+    background: #888;
+}
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
@@ -456,7 +465,7 @@ section .title::after{
     height: 100%;
     width: 100%;
     border: 1px solid lightgrey;
-    border-radius: 6px;
+    border-radius: 20px;
     outline: none;
     padding: 0 15px;
     font-size: 17px;
@@ -483,7 +492,7 @@ section .title::after{
   outline: none;
   font-size: 18px;
   font-weight: 500;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: pointer;
   flex-wrap: nowrap;
   background: #AE5858;
@@ -491,7 +500,7 @@ section .title::after{
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-  color: rgb(85, 87, 6);
+  color: rgb(62, 62, 59);
   background: none;
 }
 
@@ -600,3 +609,32 @@ section .title::after{
         line-height: 38px;
     }
 }
+.popup-wrapper{
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.popup{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    padding: 20px;
+    background: rgb(95, 91, 91);
+    position: relative;
+   
+}
+
+.popup-close{
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    cursor: pointer;
+
+}
+

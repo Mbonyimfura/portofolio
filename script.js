@@ -71,3 +71,32 @@ $(document).ready(function(){
         }
     });
 });
+//popup
+const button=document.querySelector('.button')
+const popup=document.querySelector('.popup-wrapper')
+const close=document.querySelector('.popup-close')
+button.addEventListener('mouseover',()=>{
+popup.style.display='block'
+})
+close.addEventListener('click',()=>{
+    popup.style.display=''
+    })
+    popup.addEventListener('click',()=>{
+        popup.style.display='none'
+        })
+
+     //image slider
+     let myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          let i;
+          let x = document.getElementsByClassName("slider");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
