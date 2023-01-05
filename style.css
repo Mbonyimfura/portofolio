@@ -623,11 +623,21 @@ section .title::after{
     text-align: center;
     width: 100%;
     max-width: 300px;
-    margin: 10% auto;
+    margin: 30% auto;
     padding: 20px;
-    background: rgb(95, 91, 91);
+    background: #AE5858;
     position: relative;
+    border: 2px solid #AE5858;;
+    border-radius: 25px;
    
+}
+.popup a{
+    background: crimson;
+    color: white;
+    text-decoration: none;
+    padding: 6px 8px;
+    font-size: 8px;
+    
 }
 
 .popup-close{
